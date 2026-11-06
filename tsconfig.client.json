@@ -1,0 +1,11 @@
+{
+  "extends": "./tsconfig.base.json",
+  "include": [
+    "src/client/**/*.ts",
+    "src/client/**/*.tsx",
+    "src/records.ts",
+    "src/tree.ts",
+    "src/protocol.ts",
+    "src/projection-types.ts"
+  ]
+}

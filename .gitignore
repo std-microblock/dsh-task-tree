@@ -1,0 +1,6 @@
+node_modules/
+*.tsbuildinfo
+.smoke/
+tests/.smoke-home
+.DS_Store
+.verify/

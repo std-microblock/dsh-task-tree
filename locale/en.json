@@ -1,0 +1,1 @@
+{ "meta": { "title": "Task tree", "description": "Builds a self-extending task tree from what the agent is doing, shown above the composer or as a floating card.", "detail": "docs/DETAIL.md" } }

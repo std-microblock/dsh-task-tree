@@ -1,0 +1,22 @@
+- insert:
+    - id: task-tree
+      name: dsh-task-tree
+      config:
+        mode: fork
+        minSteps: 2
+        minIntervalMs: 15000
+        maxDepth: 4
+        timeoutMs: 120000
+        maxResponseBytes: 65536
+        maxParseRetries: 2
+        includeSubagents: false
+        promptOutlineMaxItems: 60
+        recentLimit: 50
+        listPollIntervalMs: 15000
+        replaceTitle: false
+        checkpoint:
+          everyMessages: 40
+          keepMessages: 8
+          summaryMaxTokens: 2000
+          toolResultMaxChars: 2000
+          chunkMaxChars: 120000

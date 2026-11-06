@@ -1,0 +1,1 @@
+{ "meta": { "title": "任务树", "description": "根据智能体正在做和已经做过的事情实时生成会自动延展的任务树，可显示在输入框上方或对话右上角浮窗。", "detail": "docs/DETAIL.zh.md" } }
