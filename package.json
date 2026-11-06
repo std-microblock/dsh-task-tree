@@ -56,7 +56,13 @@
       ]
     }
   },
+  "author": "std-microblock",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/std-microblock/dsh-task-tree.git"
+  },
+  "homepage": "https://github.com/std-microblock/dsh-task-tree#readme",
   "dependencies": {
     "zod": "4.4.3"
   },
