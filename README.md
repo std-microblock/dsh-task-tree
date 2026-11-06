@@ -12,19 +12,27 @@
 
 ## 安装
 
-需要一份已构建的 DSH 源码 checkout：
+装法跟其他第三方插件一样，不需要 DSH 源码 checkout（仓库里已带构建好的 `lib/`）：
 
-```sh
-pnpm install
-pnpm run build
-dsh plugin --profile web add "$PWD"
-```
+- 内网：**插件 → 发现**，搜「任务树」点安装。
+- 命令行：`dsh plugin --profile web add git+https://gitlab.deepseek.com/pub/dsh-task-tree.git`
+- 公开版：`dsh plugin --profile web add github:std-microblock/dsh-task-tree`
 
 ## 使用
 
 装好后输入框上方会出现任务卡片，点开就是当前那条分支：已完成的事项带勾，正在进行的显示细节，决策点一下就插进输入框。
 
 显示位置、生成方式、标题开关都在「插件 → 任务树」里改；要写进 profile 配置的字段见 [docs/config.md](docs/config.md)。
+
+## 开发
+
+开发需要一份已构建的 DSH 源码 checkout，默认与本仓库同级（`../deepseek-harness`）——`devDependencies` 用 `link:` 指向它的各个包：
+
+```sh
+pnpm install
+pnpm run build
+pnpm run typecheck && pnpm test
+```
 
 ## 已知限制
 
